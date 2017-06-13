@@ -25,5 +25,9 @@
 	{
 		handle->println(text);
 	}
-
+	
+	void hardware_serial_printNumber(HardwareSerial *handle, int value)
+	{
+		handle->println(value);
+	}
  };

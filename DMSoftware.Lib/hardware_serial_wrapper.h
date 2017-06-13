@@ -14,12 +14,26 @@ extern "C" {
 #endif
 
 typedef struct HardwareSerial HardwareSerial;
+
 /*
-* Get Hardware serial Handle
+* Gets Hardware serial Handle
 */
 HardwareSerial* hardware_serial_get(void);
+
+/*
+*	Setups hardware serial
+*/
 void hardware_serial_begin(HardwareSerial *,int);
+
+/*
+*	Prints characters to serial. New line
+*/
 void hardware_serial_println(HardwareSerial*, const char *);
+
+/*
+*	Prints number to serial. New line
+*/
+void hardware_serial_printNumber(HardwareSerial*, int);
 
 #ifdef __cplusplus
 }

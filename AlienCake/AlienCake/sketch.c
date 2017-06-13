@@ -25,7 +25,7 @@ void setup() {
 	#ifdef DEBUG
 		serial = hardware_serial_get();
 		hardware_serial_begin(serial, 9600);
-		hardware_serial_println(serial, "Starting program for Alien Cake");
+		hardware_serial_println(serial, "Starting program for Alien Cake\n");
 	#endif
 	// put your setup code here, to run once:
 	led = led_create(PIN_D4);
@@ -35,9 +35,16 @@ void setup() {
 }
 
 void loop() {
+	#ifdef DEBUG
+		hardware_serial_println(serial, "Distance detector on\n");
+	#endif
   // put your main code here, to run repeatedly:
 	int distance = length_detector_measure(detector);
 	
+	#ifdef DEBUG
+		hardware_serial_printNumber(serial, distance);
+	#endif
+		
 	if(distance > 0)
 	{
 		led_turn_on(led->led_pin);

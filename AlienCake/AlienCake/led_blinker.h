@@ -13,15 +13,13 @@
 typedef struct led_blinker
 {
 	int led_pin;
-	void (*turn_on)(int);
-	void (*turn_off)(int);
 }led_blinker;
 
 led_blinker *led_create(int);
 void led_destroy(led_blinker*);
 static void led_init(int);
-static void led_turn_on(int);
-static void led_turn_off(int);
+void led_turn_on(int);
+void led_turn_off(int);
 
 
 

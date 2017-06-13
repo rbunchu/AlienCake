@@ -13,8 +13,6 @@ led_blinker* led_create(int led_pin)
 {
 	led_blinker *led = malloc(sizeof(led_blinker));
 	led->led_pin = led_pin;
-	led->turn_on = led_turn_on;
-	led->turn_off = led_turn_off;
 	led_init(led->led_pin);
 
 	return led;

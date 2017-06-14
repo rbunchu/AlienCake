@@ -8,5 +8,7 @@ src\LedBlinker.cpp
 
 src\LengthSensor.cpp
 
+src\MotorDriver.cpp
+
 src\Mp3Player.cpp
 

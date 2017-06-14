@@ -37,6 +37,7 @@ SUBDIRS :=  \
 ../include/core/ \
 ../include/libraries/ \
 ../include/libraries/DFPlayerMiniMp3 \
+../include/libraries/DFPlayerMiniMp3/include \
 ../include/libraries/DFPlayerMiniMp3/src \
 ../include/libraries/SoftwareSerial/ \
 ../include/libraries/SoftwareSerial/src/ \

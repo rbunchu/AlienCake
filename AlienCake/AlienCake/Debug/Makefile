@@ -42,6 +42,7 @@ C_SRCS +=  \
 ../sketch.cpp \
 ../src/LedBlinker.cpp \
 ../src/LengthSensor.cpp \
+../src/MotorDriver.cpp \
 ../src/Mp3Player.cpp
 
 
@@ -55,24 +56,28 @@ OBJS +=  \
 sketch.o \
 src/LedBlinker.o \
 src/LengthSensor.o \
+src/MotorDriver.o \
 src/Mp3Player.o
 
 OBJS_AS_ARGS +=  \
 sketch.o \
 src/LedBlinker.o \
 src/LengthSensor.o \
+src/MotorDriver.o \
 src/Mp3Player.o
 
 C_DEPS +=  \
 sketch.d \
 src/LedBlinker.d \
 src/LengthSensor.d \
+src/MotorDriver.d \
 src/Mp3Player.d
 
 C_DEPS_AS_ARGS +=  \
 sketch.d \
 src/LedBlinker.d \
 src/LengthSensor.d \
+src/MotorDriver.d \
 src/Mp3Player.d
 
 OUTPUT_FILE_PATH +=AlienCake.elf
@@ -90,6 +95,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

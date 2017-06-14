@@ -14,6 +14,8 @@ C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArd
                               C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                               C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o) (millis)
+C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                              src/MotorDriver.o (analogWrite)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                               src/LedBlinker.o (pinMode)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
@@ -106,6 +108,29 @@ Discarded input sections
  .text          0x00000000        0x0 src/LengthSensor.o
  .data          0x00000000        0x0 src/LengthSensor.o
  .bss           0x00000000        0x0 src/LengthSensor.o
+ .text          0x00000000        0x0 src/MotorDriver.o
+ .data          0x00000000        0x0 src/MotorDriver.o
+ .bss           0x00000000        0x0 src/MotorDriver.o
+ .text._ZN11MotorDriverC2Eii
+                0x00000000       0x3a src/MotorDriver.o
+ .text._ZN11MotorDriver5StartEi
+                0x00000000        0x8 src/MotorDriver.o
+ .text._ZN11MotorDriver4StopEv
+                0x00000000        0xc src/MotorDriver.o
+ .text._ZN11MotorDriver15ChangeDirectionE14MotorDirection
+                0x00000000       0x1a src/MotorDriver.o
+ .text._ZN11MotorDriver11ChangeSpeedEj
+                0x00000000       0x14 src/MotorDriver.o
+ .debug_info    0x00000000      0x477 src/MotorDriver.o
+ .debug_abbrev  0x00000000      0x1cb src/MotorDriver.o
+ .debug_loc     0x00000000      0x260 src/MotorDriver.o
+ .debug_aranges
+                0x00000000       0x40 src/MotorDriver.o
+ .debug_ranges  0x00000000       0x30 src/MotorDriver.o
+ .debug_line    0x00000000      0x1f5 src/MotorDriver.o
+ .debug_str     0x00000000      0x3ef src/MotorDriver.o
+ .comment       0x00000000       0x31 src/MotorDriver.o
+ .debug_frame   0x00000000       0x70 src/MotorDriver.o
  .text          0x00000000        0x0 src/Mp3Player.o
  .data          0x00000000        0x0 src/Mp3Player.o
  .bss           0x00000000        0x0 src/Mp3Player.o
@@ -342,6 +367,27 @@ Discarded input sections
  .text.millis   0x00000000       0x18 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .text.delayMicroseconds
                 0x00000000       0x16 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .data          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .bss           0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .text.analogReference
+                0x00000000        0x6 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .text.analogRead
+                0x00000000       0x3a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .text.analogWrite
+                0x00000000       0xbe C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .data.analog_reference
+                0x00000000        0x1 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_info    0x00000000      0x26d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_abbrev  0x00000000      0x16b C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_loc     0x00000000       0xfe C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_aranges
+                0x00000000       0x30 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_ranges  0x00000000       0x20 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_line    0x00000000      0x217 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_str     0x00000000      0x243 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .comment       0x00000000       0x31 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_frame   0x00000000       0x54 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .text          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .data          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .bss           0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
@@ -696,6 +742,7 @@ LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/
 LOAD sketch.o
 LOAD src/LedBlinker.o
 LOAD src/LengthSensor.o
+LOAD src/MotorDriver.o
 LOAD src/Mp3Player.o
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a

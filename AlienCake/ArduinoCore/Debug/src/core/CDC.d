@@ -29,7 +29,7 @@ src/core/CDC.d src/core/CDC.o: ../src/core/CDC.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
  ..\include\core/Printable.h ..\include\core/USBAPI.h \
- ..\include\variants\standard/pins_arduino.h \
+ ..\include\core/../variants/standard/pins_arduino.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\atomic.h
 
@@ -101,7 +101,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 ..\include\core/USBAPI.h:
 
-..\include\variants\standard/pins_arduino.h:
+..\include\core/../variants/standard/pins_arduino.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h:
 

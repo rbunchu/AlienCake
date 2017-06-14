@@ -35,15 +35,25 @@ LINKER_SCRIPT_DEP:=
 SUBDIRS :=  \
 ../include/ \
 ../include/core/ \
+../include/libraries/ \
+../include/libraries/DFPlayerMiniMp3 \
+../include/libraries/DFPlayerMiniMp3/include \
+../include/libraries/DFPlayerMiniMp3/src \
+../include/libraries/SoftwareSerial/ \
+../include/libraries/SoftwareSerial/src/ \
 ../include/variants/ \
 ../include/variants/standard/ \
 ../src/ \
 ../src/core/ \
-../src/core/PreprocessingAssembly/
+../src/core/PreprocessingAssembly/ \
+../src/libraries/ \
+../src/libraries/SoftwareSerial/ \
+../src/libraries/SoftwareSerial/src/
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../include/libraries/DFPlayerMiniMp3/src/DFRobotDFPlayerMini.cpp \
 ../src/core/abi.cpp \
 ../src/core/CDC.cpp \
 ../src/core/HardwareSerial.cpp \
@@ -67,7 +77,8 @@ C_SRCS +=  \
 ../src/core/wiring_pulse.c \
 ../src/core/wiring_shift.c \
 ../src/core/WMath.cpp \
-../src/core/WString.cpp
+../src/core/WString.cpp \
+../src/libraries/SoftwareSerial/src/SoftwareSerial.cpp
 
 
 PREPROCESSING_SRCS +=  \
@@ -78,6 +89,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+include/libraries/DFPlayerMiniMp3/src/DFRobotDFPlayerMini.o \
 src/core/abi.o \
 src/core/CDC.o \
 src/core/HardwareSerial.o \
@@ -102,9 +114,11 @@ src/core/wiring_digital.o \
 src/core/wiring_pulse.o \
 src/core/wiring_shift.o \
 src/core/WMath.o \
-src/core/WString.o
+src/core/WString.o \
+src/libraries/SoftwareSerial/src/SoftwareSerial.o
 
 OBJS_AS_ARGS +=  \
+include/libraries/DFPlayerMiniMp3/src/DFRobotDFPlayerMini.o \
 src/core/abi.o \
 src/core/CDC.o \
 src/core/HardwareSerial.o \
@@ -129,9 +143,11 @@ src/core/wiring_digital.o \
 src/core/wiring_pulse.o \
 src/core/wiring_shift.o \
 src/core/WMath.o \
-src/core/WString.o
+src/core/WString.o \
+src/libraries/SoftwareSerial/src/SoftwareSerial.o
 
 C_DEPS +=  \
+include/libraries/DFPlayerMiniMp3/src/DFRobotDFPlayerMini.d \
 src/core/abi.d \
 src/core/CDC.d \
 src/core/HardwareSerial.d \
@@ -156,9 +172,11 @@ src/core/wiring_digital.d \
 src/core/wiring_pulse.d \
 src/core/wiring_shift.d \
 src/core/WMath.d \
-src/core/WString.d
+src/core/WString.d \
+src/libraries/SoftwareSerial/src/SoftwareSerial.d
 
 C_DEPS_AS_ARGS +=  \
+include/libraries/DFPlayerMiniMp3/src/DFRobotDFPlayerMini.d \
 src/core/abi.d \
 src/core/CDC.d \
 src/core/HardwareSerial.d \
@@ -183,7 +201,8 @@ src/core/wiring_digital.d \
 src/core/wiring_pulse.d \
 src/core/wiring_shift.d \
 src/core/WMath.d \
-src/core/WString.d
+src/core/WString.d \
+src/libraries/SoftwareSerial/src/SoftwareSerial.d
 
 OUTPUT_FILE_PATH +=libArduinoCore.a
 
@@ -248,17 +267,35 @@ LINKER_SCRIPT_DEP+=
 
 
 
+
+
+
+
+include/libraries/DFPlayerMiniMp3/src/%.o: ../include/libraries/DFPlayerMiniMp3/src/%.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard" -I"..\include\libraries\SoftwareSerial\src"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 src/core/%.o: ../src/core/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard" -I"..\include\libraries\SoftwareSerial\src"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu99 -std=gnu11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 src/core/%.o: ../src/core/%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard" -I"..\include\libraries\SoftwareSerial\src"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+src/libraries/SoftwareSerial/src/%.o: ../src/libraries/SoftwareSerial/src/%.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=10801 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include" -I"..\include\core" -I"..\include\variants\standard" -I"..\include\libraries\SoftwareSerial\src"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -w -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 

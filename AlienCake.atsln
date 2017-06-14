@@ -4,13 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "AlienCake", "AlienCake\AlienCake\AlienCake.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
-	ProjectSection(ProjectDependencies) = postProject
-		{5016F546-3356-4942-B0E9-EBFC0ED2F76C} = {5016F546-3356-4942-B0E9-EBFC0ED2F76C}
-	EndProjectSection
 EndProject
 Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "AlienCake\ArduinoCore\ArduinoCore.cppproj", "{C1F550D3-5484-468A-A082-36FA339B06E9}"
-EndProject
-Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "DMSoftware.Lib", "DMSoftware.Lib\DMSoftware.Lib.cppproj", "{5016F546-3356-4942-B0E9-EBFC0ED2F76C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +21,6 @@ Global
 		{C1F550D3-5484-468A-A082-36FA339B06E9}.Debug|AVR.Build.0 = Debug|AVR
 		{C1F550D3-5484-468A-A082-36FA339B06E9}.Release|AVR.ActiveCfg = Release|AVR
 		{C1F550D3-5484-468A-A082-36FA339B06E9}.Release|AVR.Build.0 = Release|AVR
-		{5016F546-3356-4942-B0E9-EBFC0ED2F76C}.Debug|AVR.ActiveCfg = Debug|AVR
-		{5016F546-3356-4942-B0E9-EBFC0ED2F76C}.Debug|AVR.Build.0 = Debug|AVR
-		{5016F546-3356-4942-B0E9-EBFC0ED2F76C}.Release|AVR.ActiveCfg = Release|AVR
-		{5016F546-3356-4942-B0E9-EBFC0ED2F76C}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,7 +20,8 @@ src/core/WInterrupts.d src/core/WInterrupts.o: ../src/core/WInterrupts.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- ..\include\core/binary.h ..\include\variants\standard/pins_arduino.h
+ ..\include\core/binary.h \
+ ..\include\core/../variants/standard/pins_arduino.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
 
@@ -68,4 +69,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\include\core/binary.h:
 
-..\include\variants\standard/pins_arduino.h:
+..\include\core/../variants/standard/pins_arduino.h:

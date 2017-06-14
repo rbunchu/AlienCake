@@ -3,21 +3,27 @@ Archive member included to satisfy reference by file (symbol)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
-                              length_detector.o (delay)
+                              sketch.o (delay)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
-                              led_blinker.o (pinMode)
+                              src/LedBlinker.o (pinMode)
 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
                               C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o) (yield)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                              length_detector.o (__divmodhi4)
+                              src/LengthSensor.o (__divmodhi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
                               sketch.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              sketch.o (__do_global_ctors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                              sketch.o (__do_global_dtors)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                              led_blinker.o (malloc)
+                              src/mp3_player.o (malloc)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o) (__do_copy_data)
 
@@ -25,27 +31,36 @@ Allocating common symbols
 Common symbol       size              file
 
 __brkval            0x2               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-detector            0x2               sketch.o
-led                 0x2               sketch.o
 __flp               0x2               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
 
 Discarded input sections
 
  .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .text          0x00000000        0x0 led_blinker.o
- .data          0x00000000        0x0 led_blinker.o
- .bss           0x00000000        0x0 led_blinker.o
- .text.led_destroy
-                0x00000000        0x4 led_blinker.o
- .text          0x00000000        0x0 length_detector.o
- .data          0x00000000        0x0 length_detector.o
- .bss           0x00000000        0x0 length_detector.o
- .text.length_detector_free
-                0x00000000        0x4 length_detector.o
  .text          0x00000000        0x0 sketch.o
  .data          0x00000000        0x0 sketch.o
  .bss           0x00000000        0x0 sketch.o
+ .text          0x00000000        0x0 src/LedBlinker.o
+ .data          0x00000000        0x0 src/LedBlinker.o
+ .bss           0x00000000        0x0 src/LedBlinker.o
+ .text          0x00000000        0x0 src/LengthSensor.o
+ .data          0x00000000        0x0 src/LengthSensor.o
+ .bss           0x00000000        0x0 src/LengthSensor.o
+ .text          0x00000000        0x0 src/mp3_player.o
+ .data          0x00000000        0x0 src/mp3_player.o
+ .bss           0x00000000        0x0 src/mp3_player.o
+ .text.mp3_player_create
+                0x00000000       0x28 src/mp3_player.o
+ .debug_info    0x00000000      0x1dc src/mp3_player.o
+ .debug_abbrev  0x00000000      0x106 src/mp3_player.o
+ .debug_loc     0x00000000       0xb1 src/mp3_player.o
+ .debug_aranges
+                0x00000000       0x20 src/mp3_player.o
+ .debug_ranges  0x00000000       0x10 src/mp3_player.o
+ .debug_line    0x00000000      0x12a src/mp3_player.o
+ .debug_str     0x00000000      0x1f4 src/mp3_player.o
+ .comment       0x00000000       0x31 src/mp3_player.o
+ .debug_frame   0x00000000       0x38 src/mp3_player.o
  .text          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
  .data          0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
  .bss           0x00000000        0x0 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
@@ -110,6 +125,38 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
@@ -124,8 +171,28 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .data          0x00000000        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text.avr-libc
+                0x00000000      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ COMMON         0x00000000        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
@@ -159,13 +226,13 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-LOAD led_blinker.o
-LOAD length_detector.o
 LOAD sketch.o
+LOAD src/LedBlinker.o
+LOAD src/LengthSensor.o
+LOAD src/mp3_player.o
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
 LOAD C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a
-LOAD C:\Users\mkamuda\Documents\Projects\AlienCake\DMSoftware.Lib\Release\libDMSoftware.Lib.a
 END GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
@@ -273,7 +340,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x86a
+.text           0x00000000      0x61a
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -314,137 +381,154 @@ END GROUP
  *(.lowtext*)
                 0x000000c2                __ctors_start = .
  *(.ctors)
-                0x000000c2                __ctors_end = .
-                0x000000c2                __dtors_start = .
+ .ctors         0x000000c2        0x2 sketch.o
+                0x000000c4                __ctors_end = .
+                0x000000c4                __dtors_start = .
  *(.dtors)
-                0x000000c2                __dtors_end = .
+ .dtors         0x000000c4        0x2 sketch.o
+                0x000000c6                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000c2        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000c2                __init
+ .init0         0x000000c6        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000c6                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000c2        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x000000c6        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000000ce       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x000000ce                __do_clear_bss
- .init4         0x000000de       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x000000de                __do_copy_data
+ .init4         0x000000d2       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000d2                __do_clear_bss
+ .init4         0x000000e2       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x000000e2                __do_copy_data
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
+ .init6         0x000000f8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000000f8                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000000f4        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x0000010e        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x000000fc        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000fc                __vector_22
-                0x000000fc                __vector_1
-                0x000000fc                __vector_24
-                0x000000fc                __vector_12
-                0x000000fc                __bad_interrupt
-                0x000000fc                __vector_6
-                0x000000fc                __vector_3
-                0x000000fc                __vector_23
-                0x000000fc                __vector_25
-                0x000000fc                __vector_11
-                0x000000fc                __vector_13
-                0x000000fc                __vector_17
-                0x000000fc                __vector_19
-                0x000000fc                __vector_7
-                0x000000fc                __vector_5
-                0x000000fc                __vector_4
-                0x000000fc                __vector_9
-                0x000000fc                __vector_2
-                0x000000fc                __vector_21
-                0x000000fc                __vector_15
-                0x000000fc                __vector_8
-                0x000000fc                __vector_14
-                0x000000fc                __vector_10
-                0x000000fc                __vector_18
-                0x000000fc                __vector_20
-                0x00000100                . = ALIGN (0x2)
+ .text          0x00000116        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000116                __vector_22
+                0x00000116                __vector_1
+                0x00000116                __vector_24
+                0x00000116                __vector_12
+                0x00000116                __bad_interrupt
+                0x00000116                __vector_6
+                0x00000116                __vector_3
+                0x00000116                __vector_23
+                0x00000116                __vector_25
+                0x00000116                __vector_11
+                0x00000116                __vector_13
+                0x00000116                __vector_17
+                0x00000116                __vector_19
+                0x00000116                __vector_7
+                0x00000116                __vector_5
+                0x00000116                __vector_4
+                0x00000116                __vector_9
+                0x00000116                __vector_2
+                0x00000116                __vector_21
+                0x00000116                __vector_15
+                0x00000116                __vector_8
+                0x00000116                __vector_14
+                0x00000116                __vector_10
+                0x00000116                __vector_18
+                0x00000116                __vector_20
+                0x0000011a                . = ALIGN (0x2)
  *(.text.*)
- .text.led_create
-                0x00000100       0x2e led_blinker.o
-                0x00000100                led_create
- .text.led_turn_on
-                0x0000012e        0x6 led_blinker.o
-                0x0000012e                led_turn_on
- .text.led_turn_off
-                0x00000134        0x6 led_blinker.o
-                0x00000134                led_turn_off
- .text.length_detector_create
-                0x0000013a       0x44 length_detector.o
-                0x0000013a                length_detector_create
- .text.length_detector_measure
-                0x0000017e       0x7c length_detector.o
-                0x0000017e                length_detector_measure
- .text.setup    0x000001fa       0x34 sketch.o
-                0x000001fa                setup
- .text.loop     0x0000022e       0x3e sketch.o
-                0x0000022e                loop
+ .text.setup    0x0000011a        0x8 sketch.o
+                0x0000011a                setup
+ .text.loop     0x00000122       0x2a sketch.o
+                0x00000122                loop
+ .text.startup._GLOBAL__sub_I_led
+                0x0000014c       0x1c sketch.o
+ .text.exit._GLOBAL__sub_D_led
+                0x00000168        0x8 sketch.o
+ .text._ZN10LedBlinkerC2Ei
+                0x00000170        0xe src/LedBlinker.o
+                0x00000170                _ZN10LedBlinkerC1Ei
+                0x00000170                _ZN10LedBlinkerC2Ei
+ .text._ZN10LedBlinkerD2Ev
+                0x0000017e        0x2 src/LedBlinker.o
+                0x0000017e                _ZN10LedBlinkerD2Ev
+                0x0000017e                _ZN10LedBlinkerD1Ev
+ .text._ZN10LedBlinker6TurnOnEv
+                0x00000180        0xa src/LedBlinker.o
+                0x00000180                _ZN10LedBlinker6TurnOnEv
+ .text._ZN10LedBlinker7TurnOffEv
+                0x0000018a        0xa src/LedBlinker.o
+                0x0000018a                _ZN10LedBlinker7TurnOffEv
+ .text._ZN12LengthSensorC2Eii
+                0x00000194       0x22 src/LengthSensor.o
+                0x00000194                _ZN12LengthSensorC1Eii
+                0x00000194                _ZN12LengthSensorC2Eii
+ .text._ZN12LengthSensor4PingEv
+                0x000001b6       0x26 src/LengthSensor.o
+                0x000001b6                _ZN12LengthSensor4PingEv
+ .text._ZN12LengthSensor7MeasureEv
+                0x000001dc       0x60 src/LengthSensor.o
+                0x000001dc                _ZN12LengthSensor7MeasureEv
  .text.initVariant
-                0x0000026c        0x2 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
-                0x0000026c                initVariant
+                0x0000023c        0x2 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+                0x0000023c                initVariant
  .text.startup.main
-                0x0000026e       0x1e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
-                0x0000026e                main
+                0x0000023e       0x1e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+                0x0000023e                main
  .text.__vector_16
-                0x0000028c       0x94 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
-                0x0000028c                __vector_16
- .text.micros   0x00000320       0x4a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
-                0x00000320                micros
- .text.delay    0x0000036a       0x78 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
-                0x0000036a                delay
- .text.init     0x000003e2       0x76 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
-                0x000003e2                init
+                0x0000025c       0x94 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+                0x0000025c                __vector_16
+ .text.micros   0x000002f0       0x4a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+                0x000002f0                micros
+ .text.delay    0x0000033a       0x78 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+                0x0000033a                delay
+ .text.init     0x000003b2       0x76 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+                0x000003b2                init
  .text.turnOffPWM
-                0x00000458       0x52 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x000004aa       0x78 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
-                0x000004aa                pinMode
+                0x00000428       0x52 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x0000047a       0x78 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+                0x0000047a                pinMode
  .text.digitalWrite
-                0x00000522       0x5e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
-                0x00000522                digitalWrite
+                0x000004f2       0x5e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+                0x000004f2                digitalWrite
  .text.digitalRead
-                0x00000580       0x52 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
-                0x00000580                digitalRead
- .text.__empty  0x000005d2        0x2 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
-                0x000005d2                yield
+                0x00000550       0x52 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+                0x00000550                digitalRead
+ .text.__empty  0x000005a2        0x2 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+                0x000005a2                yield
  .text.libgcc.div
-                0x000005d4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x000005d4                _div
-                0x000005d4                __divmodhi4
+                0x000005a4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x000005a4                _div
+                0x000005a4                __divmodhi4
  .text.libgcc.div
-                0x000005fc       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x000005fc                __udivmodhi4
- .text.avr-libc
-                0x00000624      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00000624                malloc
-                0x00000754                free
-                0x00000866                . = ALIGN (0x2)
+                0x000005cc       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000005cc                __udivmodhi4
+ .text.libgcc   0x000005f4        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000005f4                __tablejump2__
+                0x00000600                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000866        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000866                _exit
-                0x00000866                exit
+ .fini9         0x00000600        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000600                _exit
+                0x00000600                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
+ .fini6         0x00000600       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000600                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -457,29 +541,29 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000866        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000616        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000086a                _etext = .
+                0x0000061a                _etext = .
 
-.data           0x00800100        0x6 load address 0x0000086a
+.data           0x00800100        0x0 load address 0x0000061a
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00800100                __malloc_heap_end
-                0x00800102                __malloc_heap_start
-                0x00800104                __malloc_margin
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x00800106                . = ALIGN (0x2)
-                0x00800106                _edata = .
-                0x00800106                PROVIDE (__data_end, .)
+                0x00800100                . = ALIGN (0x2)
+                0x00800100                _edata = .
+                0x00800100                PROVIDE (__data_end, .)
 
-.bss            0x00800106       0x11
-                0x00800106                PROVIDE (__bss_start, .)
+.bss            0x00800100        0xf
+                0x00800100                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss.sensor    0x00800100        0x4 sketch.o
+                0x00800100                sensor
+ .bss.led       0x00800104        0x2 sketch.o
+                0x00800104                led
  .bss.timer0_fract
                 0x00800106        0x1 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
@@ -489,22 +573,16 @@ END GROUP
                 0x0080010b        0x4 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
                 0x0080010b                timer0_overflow_count
  *(COMMON)
- COMMON         0x0080010f        0x4 sketch.o
-                0x0080010f                detector
-                0x00800111                led
- COMMON         0x00800113        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00800113                __brkval
-                0x00800115                __flp
-                0x00800117                PROVIDE (__bss_end, .)
-                0x0000086a                __data_load_start = LOADADDR (.data)
-                0x00000870                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080010f                PROVIDE (__bss_end, .)
+                0x0000061a                __data_load_start = LOADADDR (.data)
+                0x0000061a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800117        0x0
+.noinit         0x0080010f        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800117                _end = .
-                0x00800117                PROVIDE (__heap_start, .)
+                0x0080010f                _end = .
+                0x0080010f                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -545,15 +623,14 @@ END GROUP
 
 .comment        0x00000000       0x30
  *(.comment)
- .comment       0x00000000       0x30 led_blinker.o
+ .comment       0x00000000       0x30 sketch.o
                                  0x31 (size before relaxing)
- .comment       0x00000030       0x31 length_detector.o
- .comment       0x00000030       0x31 sketch.o
+ .comment       0x00000030       0x31 src/LedBlinker.o
+ .comment       0x00000030       0x31 src/LengthSensor.o
  .comment       0x00000030       0x31 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
  .comment       0x00000030       0x31 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
  .comment       0x00000030       0x31 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
  .comment       0x00000030       0x31 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
- .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -575,94 +652,94 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x160
+.debug_aranges  0x00000000      0x170
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x38 led_blinker.o
+                0x00000000       0x38 sketch.o
  .debug_aranges
-                0x00000038       0x30 length_detector.o
+                0x00000038       0x38 src/LedBlinker.o
  .debug_aranges
-                0x00000068       0x28 sketch.o
+                0x00000070       0x30 src/LengthSensor.o
  .debug_aranges
-                0x00000090       0x30 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+                0x000000a0       0x30 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
  .debug_aranges
-                0x000000c0       0x48 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+                0x000000d0       0x48 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000108       0x38 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+                0x00000118       0x38 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x00000140       0x20 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+                0x00000150       0x20 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1a3e
+.debug_info     0x00000000     0x1cae
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x2cb led_blinker.o
- .debug_info    0x000008bf      0x38c length_detector.o
- .debug_info    0x00000c4b      0x2b5 sketch.o
- .debug_info    0x00000f00      0x237 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
- .debug_info    0x00001137      0x2cb C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_info    0x00001402      0x5fe C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00001a00       0x3e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_info    0x000005f4      0x48a sketch.o
+ .debug_info    0x00000a7e      0x34d src/LedBlinker.o
+ .debug_info    0x00000dcb      0x3a5 src/LengthSensor.o
+ .debug_info    0x00001170      0x237 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_info    0x000013a7      0x2cb C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_info    0x00001672      0x5fe C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00001c70       0x3e C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000      0xd89
+.debug_abbrev   0x00000000      0xee8
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x169 led_blinker.o
- .debug_abbrev  0x0000070b      0x172 length_detector.o
- .debug_abbrev  0x0000087d      0x114 sketch.o
- .debug_abbrev  0x00000991      0x12d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
- .debug_abbrev  0x00000abe      0x146 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00000c04      0x15b C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00000d5f       0x2a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x000005a2      0x201 sketch.o
+ .debug_abbrev  0x000007a3      0x185 src/LedBlinker.o
+ .debug_abbrev  0x00000928      0x1c8 src/LengthSensor.o
+ .debug_abbrev  0x00000af0      0x12d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00000c1d      0x146 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00000d63      0x15b C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00000ebe       0x2a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000      0xc6f
+.debug_line     0x00000000      0xcf3
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000133      0x185 led_blinker.o
- .debug_line    0x000002b8      0x1b7 length_detector.o
- .debug_line    0x0000046f      0x16f sketch.o
- .debug_line    0x000005de      0x165 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
- .debug_line    0x00000743      0x299 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_line    0x000009dc      0x252 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00000c2e       0x41 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000133      0x1b3 sketch.o
+ .debug_line    0x000002e6      0x189 src/LedBlinker.o
+ .debug_line    0x0000046f      0x1db src/LengthSensor.o
+ .debug_line    0x0000064a      0x16d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_line    0x000007b7      0x2a1 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_line    0x00000a58      0x25a C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00000cb2       0x41 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000      0x2cc
+.debug_frame    0x00000000      0x2d0
  *(.debug_frame)
- .debug_frame   0x00000000       0x68 led_blinker.o
- .debug_frame   0x00000068       0x78 length_detector.o
- .debug_frame   0x000000e0       0x34 sketch.o
- .debug_frame   0x00000114       0x54 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
- .debug_frame   0x00000168       0xc4 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_frame   0x0000022c       0x7c C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x000002a8       0x24 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000000       0x54 sketch.o
+ .debug_frame   0x00000054       0x54 src/LedBlinker.o
+ .debug_frame   0x000000a8       0x70 src/LengthSensor.o
+ .debug_frame   0x00000118       0x54 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_frame   0x0000016c       0xc4 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000230       0x7c C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x000002ac       0x24 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000      0x860
+.debug_str      0x00000000      0x93f
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x1df led_blinker.o
-                                0x218 (size before relaxing)
- .debug_str     0x000003e7       0xbe length_detector.o
-                                0x27f (size before relaxing)
- .debug_str     0x000004a5       0x22 sketch.o
-                                0x251 (size before relaxing)
- .debug_str     0x000004c7      0x216 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_str     0x00000208      0x393 sketch.o
+                                0x3de (size before relaxing)
+ .debug_str     0x0000059b       0x62 src/LedBlinker.o
+                                0x332 (size before relaxing)
+ .debug_str     0x000005fd       0x40 src/LengthSensor.o
+                                0x329 (size before relaxing)
+ .debug_str     0x0000063d       0xab C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
                                 0x2ab (size before relaxing)
- .debug_str     0x000006dd       0x91 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_str     0x000006e8      0x165 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
                                 0x241 (size before relaxing)
- .debug_str     0x0000076e       0xd6 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x0000084d       0xd6 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
                                 0x2a6 (size before relaxing)
- .debug_str     0x00000844       0x1c C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_str     0x00000923       0x1c C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
                                 0x136 (size before relaxing)
 
-.debug_loc      0x00000000      0xbce
+.debug_loc      0x00000000      0xb16
  *(.debug_loc)
- .debug_loc     0x00000000      0x131 led_blinker.o
- .debug_loc     0x00000131      0x1fc length_detector.o
- .debug_loc     0x0000032d       0x18 sketch.o
- .debug_loc     0x00000345      0x28d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_loc     0x000005d2      0x5fc C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00000000       0x18 sketch.o
+ .debug_loc     0x00000018       0xc8 src/LedBlinker.o
+ .debug_loc     0x000000e0      0x1ad src/LengthSensor.o
+ .debug_loc     0x0000028d      0x28d C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_loc     0x0000051a      0x5fc C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -682,15 +759,15 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0xf0
+.debug_ranges   0x00000000      0x100
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x28 led_blinker.o
- .debug_ranges  0x00000028       0x20 length_detector.o
- .debug_ranges  0x00000048       0x18 sketch.o
- .debug_ranges  0x00000060       0x20 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
- .debug_ranges  0x00000080       0x38 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
- .debug_ranges  0x000000b8       0x28 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x000000e0       0x10 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000000       0x28 sketch.o
+ .debug_ranges  0x00000028       0x28 src/LedBlinker.o
+ .debug_ranges  0x00000050       0x20 src/LengthSensor.o
+ .debug_ranges  0x00000070       0x20 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000090       0x38 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x000000c8       0x28 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x000000f0       0x10 C:\Users\mkamuda\Documents\Projects\AlienCake\AlienCake\ArduinoCore\Release\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)

@@ -2,9 +2,11 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-led_blinker.c
+sketch.cpp
 
-length_detector.c
+src\LedBlinker.cpp
 
-sketch.c
+src\LengthSensor.cpp
+
+src\Mp3Player.cpp
 

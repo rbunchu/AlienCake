@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+include\libraries\DFPlayerMiniMp3\src\DFRobotDFPlayerMini.cpp
+
 src\core\abi.cpp
 
 src\core\CDC.cpp
@@ -51,4 +53,6 @@ src\core\wiring_shift.c
 src\core\WMath.cpp
 
 src\core\WString.cpp
+
+src\libraries\SoftwareSerial\src\SoftwareSerial.cpp
 

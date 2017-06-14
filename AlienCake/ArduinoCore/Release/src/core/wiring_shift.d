@@ -21,7 +21,8 @@ src/core/wiring_shift.d src/core/wiring_shift.o: \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
- ..\include\core/binary.h ..\include\variants\standard/pins_arduino.h
+ ..\include\core/binary.h \
+ ..\include\core/../variants/standard/pins_arduino.h
 
 ..\include\core/wiring_private.h:
 
@@ -69,4 +70,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\include\core/binary.h:
 
-..\include\variants\standard/pins_arduino.h:
+..\include\core/../variants/standard/pins_arduino.h:

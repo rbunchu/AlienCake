@@ -13,8 +13,8 @@ LengthSensor::LengthSensor(int echoPin, int trigPin)
 void LengthSensor::Ping()
 {	
 	digitalWrite(m_trigPin, HIGH);
-	delay(10);
-	digitalWrite(m_echoPin, LOW);
+	delayMicroseconds(10);
+	digitalWrite(m_trigPin, LOW);
 }
 
 int LengthSensor::Measure()
@@ -22,16 +22,17 @@ int LengthSensor::Measure()
 	  Ping();
 	  
 	  //wait for high state, it can never occure. Wait for few milisekonds. Maybe try tree times before returning -1
-	  if(digitalRead(m_echoPin) != HIGH)
+	  while(digitalRead(m_echoPin) != HIGH)
 	  {
-		  return -1;
+		  delayMicroseconds(1);
 	  }
 	  
-	  int time = 0;
+	  unsigned long time = micros();
 	  while(digitalRead(m_echoPin) != LOW) {
-		  time++;
-		  delay(1);
+		  delayMicroseconds(1);
 	  }
-	  
+
+	  time = micros() - time;
+	  Serial.println(time);	  
 	  return (time * 34) / 2000;
 }

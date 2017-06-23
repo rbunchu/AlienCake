@@ -5,11 +5,11 @@
 #include <HardwareSerial.h>
 
 /*End of auto generated code by Atmel studio */
-#define PIN_D4 5
+#define PIN_D4 4
 
 //Detector pins
-#define TRIG_PIN 8
-#define ECHO_PIN 9
+#define TRIG_PIN 6
+#define ECHO_PIN 7
 
 //Beginning of Auto generated function prototypes by Atmel Studio
 //End of Auto generated function prototypes by Atmel Studio
@@ -37,7 +37,7 @@ void loop() {
 		Serial.println(distance);
 	#endif
 		
-	if(distance > 0)
+	if(distance > 0 && distance < 50)
 	{
 		led.TurnOn();
 		delay(2000);

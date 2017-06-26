@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
-                              src/Mp3Player.o (_ZN19DFRobotDFPlayerMini4playEi)
+                              src/Mp3Player.o (_ZN19DFRobotDFPlayerMini6volumeEh)
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                               sketch.o (_ZN14HardwareSerial5beginEmh)
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
@@ -9,7 +9,7 @@ C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
                               F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                              src/Mp3Player.o (_Znwj)
+                              sketch.o (_Znwj)
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                               C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
@@ -115,52 +115,45 @@ Discarded input sections
  .text          0x00000000        0x0 src/MotorDriver.o
  .data          0x00000000        0x0 src/MotorDriver.o
  .bss           0x00000000        0x0 src/MotorDriver.o
- .text._ZN11MotorDriverC2Eii
-                0x00000000       0x3a src/MotorDriver.o
- .text._ZN11MotorDriver5StartEi
+ .text._ZN16MotorDriverCanalC2Eiii
+                0x00000000       0x10 src/MotorDriver.o
+ .text._ZN16MotorDriverCanal9GetEnableEv
                 0x00000000        0x8 src/MotorDriver.o
- .text._ZN11MotorDriver4StopEv
+ .text._ZN16MotorDriverCanal9GetInput1Ev
+                0x00000000        0x8 src/MotorDriver.o
+ .text._ZN16MotorDriverCanal9GetInput2Ev
+                0x00000000        0x8 src/MotorDriver.o
+ .text._ZN16MotorDriverCanal8SetInputEii
                 0x00000000        0xc src/MotorDriver.o
- .text._ZN11MotorDriver15ChangeDirectionE14MotorDirection
-                0x00000000       0x1a src/MotorDriver.o
- .text._ZN11MotorDriver11ChangeSpeedEj
+ .text._ZN16MotorDriverCanal9SetEnableEi
+                0x00000000        0x8 src/MotorDriver.o
+ .text._ZN11MotorDriverC2ER16MotorDriverCanal
+                0x00000000       0x5c src/MotorDriver.o
+ .text._ZN11MotorDriver5StartE15DriverCanalTypei
                 0x00000000       0x14 src/MotorDriver.o
- .debug_info    0x00000000      0x477 src/MotorDriver.o
- .debug_abbrev  0x00000000      0x1cb src/MotorDriver.o
- .debug_loc     0x00000000      0x260 src/MotorDriver.o
+ .text._ZN11MotorDriver4StopE15DriverCanalType
+                0x00000000       0x16 src/MotorDriver.o
+ .text._ZN11MotorDriver15ChangeDirectionE15DriverCanalType14MotorDirection
+                0x00000000       0x3c src/MotorDriver.o
+ .text._ZN11MotorDriver11ChangeSpeedE15DriverCanalTypej
+                0x00000000       0x1c src/MotorDriver.o
+ .debug_info    0x00000000      0x8e9 src/MotorDriver.o
+ .debug_abbrev  0x00000000      0x242 src/MotorDriver.o
+ .debug_loc     0x00000000      0x430 src/MotorDriver.o
  .debug_aranges
-                0x00000000       0x40 src/MotorDriver.o
- .debug_ranges  0x00000000       0x30 src/MotorDriver.o
- .debug_line    0x00000000      0x1e1 src/MotorDriver.o
- .debug_str     0x00000000      0x3f6 src/MotorDriver.o
+                0x00000000       0x70 src/MotorDriver.o
+ .debug_ranges  0x00000000       0x60 src/MotorDriver.o
+ .debug_line    0x00000000      0x2ee src/MotorDriver.o
+ .debug_str     0x00000000      0x5ba src/MotorDriver.o
  .comment       0x00000000       0x31 src/MotorDriver.o
- .debug_frame   0x00000000       0x70 src/MotorDriver.o
+ .debug_frame   0x00000000       0xdc src/MotorDriver.o
  .text          0x00000000        0x0 src/Mp3Player.o
  .data          0x00000000        0x0 src/Mp3Player.o
  .bss           0x00000000        0x0 src/Mp3Player.o
  .text._ZN9Mp3PlayerD2Ev
                 0x00000000       0x24 src/Mp3Player.o
- .text._ZN9Mp3Player9VolumeMaxEv
-                0x00000000        0x8 src/Mp3Player.o
- .rodata.str1.1
-                0x00000000       0x4d src/Mp3Player.o
- .rodata        0x00000000        0xa src/Mp3Player.o
- .text._ZN9Mp3PlayerC2Eii
-                0x00000000       0xaa src/Mp3Player.o
- .text._ZN9Mp3Player4PlayEv
-                0x00000000        0xa src/Mp3Player.o
  .text._ZN9Mp3Player4StopEv
                 0x00000000        0x6 src/Mp3Player.o
- .debug_info    0x00000000     0x23d6 src/Mp3Player.o
- .debug_abbrev  0x00000000      0x3c8 src/Mp3Player.o
- .debug_loc     0x00000000      0x20b src/Mp3Player.o
- .debug_aranges
-                0x00000000       0x40 src/Mp3Player.o
- .debug_ranges  0x00000000       0x30 src/Mp3Player.o
- .debug_line    0x00000000      0x31e src/Mp3Player.o
- .debug_str     0x00000000     0x1f0a src/Mp3Player.o
- .comment       0x00000000       0x31 src/Mp3Player.o
- .debug_frame   0x00000000       0x84 src/Mp3Player.o
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
@@ -168,8 +161,6 @@ Discarded input sections
                 0x00000000        0xc C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini13uint16ToArrayEjPh
                 0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini17calculateCheckSumEPh
-                0x00000000       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini9enableACKEv
                 0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini10disableACKEv
@@ -184,26 +175,10 @@ Discarded input sections
                 0x00000000       0x12 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini11readCommandEv
                 0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini10parseStackEv
-                0x00000000       0xae C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .progmem.gcc_sw_table._ZN19DFRobotDFPlayerMini10parseStackEv
-                0x00000000       0x2c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini13arrayToUint16EPh
                 0x00000000       0x12 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini13validateStackEv
-                0x00000000       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini9availableEv
-                0x00000000      0x108 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini9sendStackEv
-                0x00000000       0x60 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini9sendStackEhj
-                0x00000000       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini9sendStackEh
-                0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini9sendStackEhhh
                 0x00000000        0xc C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini13waitAvailableEv
-                0x00000000       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini4nextEv
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini8previousEv
@@ -214,20 +189,10 @@ Discarded input sections
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini10volumeDownEv
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini6volumeEh
-                0x00000000        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini2EQEh
-                0x00000000        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini4loopEi
                 0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini12outputDeviceEh
-                0x00000000       0x16 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini5sleepEv
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini5resetEv
-                0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini5beginER6Streamb
-                0x00000000       0x7a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini5startEv
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini5pauseEv
@@ -240,8 +205,6 @@ Discarded input sections
                 0x00000000        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini14disableLoopAllEv
                 0x00000000        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .text._ZN19DFRobotDFPlayerMini13playMp3FolderEi
-                0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini9advertiseEi
                 0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini15playLargeFolderEhj
@@ -278,16 +241,6 @@ Discarded input sections
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .text._ZN19DFRobotDFPlayerMini21readCurrentFileNumberEv
                 0x00000000        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_info    0x00000000     0x37b7 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_abbrev  0x00000000      0x49c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_loc     0x00000000     0x15d3 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_aranges
-                0x00000000      0x1d8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_ranges  0x00000000      0x1c8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_line    0x00000000      0xa99 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_str     0x00000000     0x1e00 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .comment       0x00000000       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
- .debug_frame   0x00000000      0x444 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .group         0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
@@ -308,20 +261,9 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .text._Znwj    0x00000000        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .text._Znaj    0x00000000        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .text._ZdlPv   0x00000000        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .text._ZdaPv   0x00000000        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_info    0x00000000      0x11c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_abbrev  0x00000000       0xce C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_loc     0x00000000       0x4c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_aranges
-                0x00000000       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_ranges  0x00000000       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_line    0x00000000      0x107 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_str     0x00000000      0x1c6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .comment       0x00000000       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_frame   0x00000000       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .group         0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .group         0x00000000        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
@@ -364,7 +306,6 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .text.millis   0x00000000       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
@@ -393,38 +334,14 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial4readEv
-                0x00000000       0x42 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial5writeEh
-                0x00000000       0xa0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial5flushEv
-                0x00000000        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial4peekEv
-                0x00000000       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial9availableEv
-                0x00000000       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial13stopListeningEv
-                0x00000000       0x2c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial6listenEv
-                0x00000000       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .text._ZN14SoftwareSerial11rx_pin_readEv
                 0x00000000        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .text._ZN14SoftwareSerialD2Ev
                 0x00000000        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial5setTXEh
-                0x00000000       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial5setRXEh
-                0x00000000       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerialC2Ehhb
-                0x00000000       0x56 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .text._ZN14SoftwareSerial12subtract_capEjj
                 0x00000000       0x12 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .text._ZN14SoftwareSerial5beginEl
-                0x00000000      0x11c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .text._ZN14SoftwareSerial3endEv
                 0x00000000        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .rodata._ZTV14SoftwareSerial
-                0x00000000       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .text          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(abi.o)
  .data          0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(abi.o)
  .bss           0x00000000        0x0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(abi.o)
@@ -544,8 +461,6 @@ Discarded input sections
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
- .text.libgcc.div
-                0x00000000       0x28 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .text.libgcc   0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
@@ -574,8 +489,6 @@ Discarded input sections
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x2e f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
  .text.libgcc   0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
@@ -590,8 +503,6 @@ Discarded input sections
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
  .text.libgcc.mul
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
- .text.libgcc.div
-                0x00000000       0x10 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
  .text.libgcc   0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
  .text.libgcc.prologue
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
@@ -715,8 +626,6 @@ Discarded input sections
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
- .text.libgcc.div
-                0x00000000       0x28 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc   0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
@@ -741,12 +650,7 @@ Discarded input sections
  .text.libgcc.fixed
                 0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
  .text          0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .data          0x00000000        0x6 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .text.avr-libc
-                0x00000000      0x242 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .comment       0x00000000       0x31 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- COMMON         0x00000000        0x4 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
  .text          0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .data          0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .bss           0x00000000        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
@@ -884,269 +788,378 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xd78
+.text           0x00000000     0x18e6
  *(.vectors)
  .vectors       0x00000000       0x68 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
-                0x00000068                . = ALIGN (0x2)
-                0x00000068                __trampolines_start = .
+ .progmem.gcc_sw_table._ZN19DFRobotDFPlayerMini10parseStackEv
+                0x00000068       0x2c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x00000094                . = ALIGN (0x2)
+                0x00000094                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000068        0x0 linker stubs
+ .trampolines   0x00000094        0x0 linker stubs
  *(.trampolines*)
-                0x00000068                __trampolines_end = .
+                0x00000094                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
  .progmem.data.digital_pin_to_timer_PGM
-                0x00000068       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000068                digital_pin_to_timer_PGM
+                0x00000094       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000094                digital_pin_to_timer_PGM
  .progmem.data.digital_pin_to_bit_mask_PGM
-                0x0000007c       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000007c                digital_pin_to_bit_mask_PGM
+                0x000000a8       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000a8                digital_pin_to_bit_mask_PGM
  .progmem.data.digital_pin_to_port_PGM
-                0x00000090       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000090                digital_pin_to_port_PGM
+                0x000000bc       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000bc                digital_pin_to_port_PGM
  .progmem.data.port_to_input_PGM
-                0x000000a4        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000000a4                port_to_input_PGM
+                0x000000d0        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000d0                port_to_input_PGM
  .progmem.data.port_to_output_PGM
-                0x000000ae        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000000ae                port_to_output_PGM
+                0x000000da        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000da                port_to_output_PGM
  .progmem.data.port_to_mode_PGM
-                0x000000b8        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000000b8                port_to_mode_PGM
-                0x000000c2                . = ALIGN (0x2)
+                0x000000e4        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000e4                port_to_mode_PGM
+                0x000000ee                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x000000c2                __ctors_start = .
+                0x000000ee                __ctors_start = .
  *(.ctors)
- .ctors         0x000000c2        0x2 sketch.o
- .ctors         0x000000c4        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000000c6                __ctors_end = .
-                0x000000c6                __dtors_start = .
+ .ctors         0x000000ee        0x2 sketch.o
+ .ctors         0x000000f0        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000000f2                __ctors_end = .
+                0x000000f2                __dtors_start = .
  *(.dtors)
- .dtors         0x000000c6        0x2 sketch.o
-                0x000000c8                __dtors_end = .
+ .dtors         0x000000f2        0x2 sketch.o
+                0x000000f4                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000c8        0x0 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000c8                __init
+ .init0         0x000000f4        0x0 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000f4                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000c8        0xc F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x000000f4        0xc F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000000d4       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x000000d4                __do_copy_data
- .init4         0x000000ea       0x10 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x000000ea                __do_clear_bss
+ .init4         0x00000100       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000100                __do_copy_data
+ .init4         0x00000116       0x10 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000116                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x000000fa       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x000000fa                __do_global_ctors
+ .init6         0x00000126       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x00000126                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000110        0x8 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x0000013c        0x8 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x00000118        0x4 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00000118                __vector_22
-                0x00000118                __vector_1
-                0x00000118                __vector_24
-                0x00000118                __vector_12
-                0x00000118                __bad_interrupt
-                0x00000118                __vector_6
-                0x00000118                __vector_23
-                0x00000118                __vector_25
-                0x00000118                __vector_11
-                0x00000118                __vector_13
-                0x00000118                __vector_17
-                0x00000118                __vector_7
-                0x00000118                __vector_9
-                0x00000118                __vector_2
-                0x00000118                __vector_21
-                0x00000118                __vector_15
-                0x00000118                __vector_8
-                0x00000118                __vector_14
-                0x00000118                __vector_10
-                0x00000118                __vector_20
-                0x0000011c                . = ALIGN (0x2)
+ .text          0x00000144        0x4 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000144                __vector_22
+                0x00000144                __vector_1
+                0x00000144                __vector_24
+                0x00000144                __vector_12
+                0x00000144                __bad_interrupt
+                0x00000144                __vector_6
+                0x00000144                __vector_23
+                0x00000144                __vector_25
+                0x00000144                __vector_11
+                0x00000144                __vector_13
+                0x00000144                __vector_17
+                0x00000144                __vector_7
+                0x00000144                __vector_9
+                0x00000144                __vector_2
+                0x00000144                __vector_21
+                0x00000144                __vector_15
+                0x00000144                __vector_8
+                0x00000144                __vector_14
+                0x00000144                __vector_10
+                0x00000144                __vector_20
+                0x00000148                . = ALIGN (0x2)
  *(.text.*)
- .text.setup    0x0000011c       0x26 sketch.o
-                0x0000011c                setup
- .text.loop     0x00000142       0x4e sketch.o
-                0x00000142                loop
+ .text.setup    0x00000148       0x4c sketch.o
+                0x00000148                setup
+ .text.loop     0x00000194       0x5a sketch.o
+                0x00000194                loop
  .text.startup._GLOBAL__sub_I_led
-                0x00000190       0x1c sketch.o
+                0x000001ee       0x1c sketch.o
  .text.exit._GLOBAL__sub_D_led
-                0x000001ac        0x8 sketch.o
+                0x0000020a        0x8 sketch.o
  .text._ZN10LedBlinkerC2Ei
-                0x000001b4        0xe src/LedBlinker.o
-                0x000001b4                _ZN10LedBlinkerC1Ei
-                0x000001b4                _ZN10LedBlinkerC2Ei
+                0x00000212        0xe src/LedBlinker.o
+                0x00000212                _ZN10LedBlinkerC1Ei
+                0x00000212                _ZN10LedBlinkerC2Ei
  .text._ZN10LedBlinkerD2Ev
-                0x000001c2        0x2 src/LedBlinker.o
-                0x000001c2                _ZN10LedBlinkerD2Ev
-                0x000001c2                _ZN10LedBlinkerD1Ev
+                0x00000220        0x2 src/LedBlinker.o
+                0x00000220                _ZN10LedBlinkerD2Ev
+                0x00000220                _ZN10LedBlinkerD1Ev
  .text._ZN10LedBlinker6TurnOnEv
-                0x000001c4        0xa src/LedBlinker.o
-                0x000001c4                _ZN10LedBlinker6TurnOnEv
+                0x00000222        0xa src/LedBlinker.o
+                0x00000222                _ZN10LedBlinker6TurnOnEv
  .text._ZN10LedBlinker7TurnOffEv
-                0x000001ce        0xa src/LedBlinker.o
-                0x000001ce                _ZN10LedBlinker7TurnOffEv
+                0x0000022c        0xa src/LedBlinker.o
+                0x0000022c                _ZN10LedBlinker7TurnOffEv
  .text._ZN12LengthSensorC2Eii
-                0x000001d8       0x22 src/LengthSensor.o
-                0x000001d8                _ZN12LengthSensorC1Eii
-                0x000001d8                _ZN12LengthSensorC2Eii
+                0x00000236       0x22 src/LengthSensor.o
+                0x00000236                _ZN12LengthSensorC1Eii
+                0x00000236                _ZN12LengthSensorC2Eii
  .text._ZN12LengthSensor4PingEv
-                0x000001fa       0x22 src/LengthSensor.o
-                0x000001fa                _ZN12LengthSensor4PingEv
+                0x00000258       0x22 src/LengthSensor.o
+                0x00000258                _ZN12LengthSensor4PingEv
  .text._ZN12LengthSensor7MeasureEv
-                0x0000021c       0x8e src/LengthSensor.o
-                0x0000021c                _ZN12LengthSensor7MeasureEv
+                0x0000027a       0x8e src/LengthSensor.o
+                0x0000027a                _ZN12LengthSensor7MeasureEv
+ .text._ZN9Mp3Player9VolumeMaxEv
+                0x00000308        0x8 src/Mp3Player.o
+                0x00000308                _ZN9Mp3Player9VolumeMaxEv
+ .text._ZN9Mp3PlayerC2Eii
+                0x00000310       0xd2 src/Mp3Player.o
+                0x00000310                _ZN9Mp3PlayerC2Eii
+                0x00000310                _ZN9Mp3PlayerC1Eii
+ .text._ZN9Mp3Player4PlayEv
+                0x000003e2        0xa src/Mp3Player.o
+                0x000003e2                _ZN9Mp3Player4PlayEv
+ .text._ZN19DFRobotDFPlayerMini17calculateCheckSumEPh
+                0x000003ec       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000003ec                _ZN19DFRobotDFPlayerMini17calculateCheckSumEPh
+ .text._ZN19DFRobotDFPlayerMini10parseStackEv
+                0x0000040c       0xae C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x0000040c                _ZN19DFRobotDFPlayerMini10parseStackEv
+ .text._ZN19DFRobotDFPlayerMini13validateStackEv
+                0x000004ba       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000004ba                _ZN19DFRobotDFPlayerMini13validateStackEv
+ .text._ZN19DFRobotDFPlayerMini9availableEv
+                0x000004ea      0x108 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000004ea                _ZN19DFRobotDFPlayerMini9availableEv
+ .text._ZN19DFRobotDFPlayerMini9sendStackEv
+                0x000005f2       0x60 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000005f2                _ZN19DFRobotDFPlayerMini9sendStackEv
+ .text._ZN19DFRobotDFPlayerMini9sendStackEhj
+                0x00000652       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x00000652                _ZN19DFRobotDFPlayerMini9sendStackEhj
+ .text._ZN19DFRobotDFPlayerMini9sendStackEh
+                0x00000676        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x00000676                _ZN19DFRobotDFPlayerMini9sendStackEh
+ .text._ZN19DFRobotDFPlayerMini13waitAvailableEv
+                0x0000067e       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x0000067e                _ZN19DFRobotDFPlayerMini13waitAvailableEv
+ .text._ZN19DFRobotDFPlayerMini6volumeEh
+                0x000006a2        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000006a2                _ZN19DFRobotDFPlayerMini6volumeEh
+ .text._ZN19DFRobotDFPlayerMini2EQEh
+                0x000006ac        0xa C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000006ac                _ZN19DFRobotDFPlayerMini2EQEh
+ .text._ZN19DFRobotDFPlayerMini12outputDeviceEh
+                0x000006b6       0x16 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000006b6                _ZN19DFRobotDFPlayerMini12outputDeviceEh
+ .text._ZN19DFRobotDFPlayerMini5resetEv
+                0x000006cc        0x6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000006cc                _ZN19DFRobotDFPlayerMini5resetEv
+ .text._ZN19DFRobotDFPlayerMini5beginER6Streamb
+                0x000006d2       0x7a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x000006d2                _ZN19DFRobotDFPlayerMini5beginER6Streamb
+ .text._ZN19DFRobotDFPlayerMini13playMp3FolderEi
+                0x0000074c        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                0x0000074c                _ZN19DFRobotDFPlayerMini13playMp3FolderEi
  .text._ZN14HardwareSerial9availableEv
-                0x000002aa       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000002aa                _ZN14HardwareSerial9availableEv
+                0x00000754       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000754                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x000002c2       0x1c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000002c2                _ZN14HardwareSerial4peekEv
+                0x0000076c       0x1c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000076c                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x000002de       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000002de                _ZN14HardwareSerial4readEv
+                0x00000788       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000788                _ZN14HardwareSerial4readEv
  .text._Z14serialEventRunv
-                0x00000306       0x1c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000306                _Z14serialEventRunv
+                0x000007b0       0x1c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000007b0                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x00000322       0x42 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000322                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x000007cc       0x42 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000007cc                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x00000364       0x8e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000364                _ZN14HardwareSerial5writeEh
+                0x0000080e       0x8e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000080e                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x000003f2       0x44 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000003f2                _ZN14HardwareSerial5flushEv
+                0x0000089c       0x44 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000089c                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x00000436       0xca C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000436                _ZN14HardwareSerial5beginEmh
+                0x000008e0       0xca C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000008e0                _ZN14HardwareSerial5beginEmh
  .text.__vector_18
-                0x00000500       0x64 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000500                __vector_18
+                0x000009aa       0x64 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000009aa                __vector_18
  .text.__vector_19
-                0x00000564       0x4c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000564                __vector_19
+                0x00000a0e       0x4c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000a0e                __vector_19
  .text._Z17Serial0_availablev
-                0x000005b0       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000005b0                _Z17Serial0_availablev
+                0x00000a5a       0x14 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000a5a                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x000005c4       0x5a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000a6e       0x5a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x0000061e        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000061e                initVariant
+                0x00000ac8        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00000ac8                initVariant
  .text.startup.main
-                0x00000620       0x1e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00000620                main
+                0x00000aca       0x1e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00000aca                main
+ .text._Znwj    0x00000ae8        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+                0x00000ae8                _Znwj
  .text._ZN5Print5writeEPKhj
-                0x0000063e       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000063e                _ZN5Print5writeEPKhj
+                0x00000aec       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000aec                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x00000692       0x2a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00000692                _ZN5Print5writeEPKc
+                0x00000b40       0x2a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000b40                _ZN5Print5writeEPKc
  .text._ZN5Print5printEc
-                0x000006bc        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000006bc                _ZN5Print5printEc
+                0x00000b6a        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000b6a                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x000006ca        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000006ca                _ZN5Print7printlnEv
+                0x00000b78        0x8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000b78                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x000006d2       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000006d2                _ZN5Print7printlnEPKc
+                0x00000b80       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000b80                _ZN5Print7printlnEPKc
  .text._ZN5Print11printNumberEmh
-                0x000006f6       0x92 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000006f6                _ZN5Print11printNumberEmh
+                0x00000ba4       0x92 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000ba4                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEmi
-                0x00000788       0x1a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00000788                _ZN5Print5printEmi
+                0x00000c36       0x1a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000c36                _ZN5Print5printEmi
  .text._ZN5Print7printlnEmi
-                0x000007a2       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000007a2                _ZN5Print7printlnEmi
+                0x00000c50       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000c50                _ZN5Print7printlnEmi
  .text._ZN5Print5printEli
-                0x000007c6       0x90 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000007c6                _ZN5Print5printEli
+                0x00000c74       0x90 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000c74                _ZN5Print5printEli
  .text._ZN5Print5printEii
-                0x00000856        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00000856                _ZN5Print5printEii
+                0x00000d04        0xe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000d04                _ZN5Print5printEii
  .text._ZN5Print7printlnEii
-                0x00000864       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00000864                _ZN5Print7printlnEii
+                0x00000d12       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000d12                _ZN5Print7printlnEii
  .text.__vector_16
-                0x00000888       0x94 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00000888                __vector_16
- .text.micros   0x0000091c       0x4a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x0000091c                micros
- .text.delay    0x00000966       0x78 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00000966                delay
+                0x00000d36       0x94 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000d36                __vector_16
+ .text.millis   0x00000dca       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000dca                millis
+ .text.micros   0x00000de2       0x4a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000de2                micros
+ .text.delay    0x00000e2c       0x78 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000e2c                delay
  .text.delayMicroseconds
-                0x000009de       0x16 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x000009de                delayMicroseconds
- .text.init     0x000009f4       0x76 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x000009f4                init
+                0x00000ea4       0x16 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000ea4                delayMicroseconds
+ .text.init     0x00000eba       0x76 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000eba                init
  .text.turnOffPWM
-                0x00000a6a       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00000abc       0x78 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000abc                pinMode
+                0x00000f30       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00000f82       0x78 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000f82                pinMode
  .text.digitalWrite
-                0x00000b34       0x5e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000b34                digitalWrite
+                0x00000ffa       0x5e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000ffa                digitalWrite
  .text.digitalRead
-                0x00000b92       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000b92                digitalRead
+                0x00001058       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001058                digitalRead
+ .text._ZN14SoftwareSerial4readEv
+                0x000010aa       0x42 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000010aa                _ZN14SoftwareSerial4readEv
+ .text._ZN14SoftwareSerial5writeEh
+                0x000010ec       0xa0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000010ec                _ZN14SoftwareSerial5writeEh
+ .text._ZN14SoftwareSerial5flushEv
+                0x0000118c        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x0000118c                _ZN14SoftwareSerial5flushEv
+ .text._ZN14SoftwareSerial4peekEv
+                0x0000118e       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x0000118e                _ZN14SoftwareSerial4peekEv
+ .text._ZN14SoftwareSerial9availableEv
+                0x000011be       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000011be                _ZN14SoftwareSerial9availableEv
+ .text._ZN14SoftwareSerial13stopListeningEv
+                0x000011ee       0x2c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000011ee                _ZN14SoftwareSerial13stopListeningEv
+ .text._ZN14SoftwareSerial6listenEv
+                0x0000121a       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x0000121a                _ZN14SoftwareSerial6listenEv
  .text.__vector_3
-                0x00000be4       0xf4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
-                0x00000be4                __vector_5
-                0x00000be4                __vector_4
-                0x00000be4                __vector_3
- .text.__empty  0x00000cd8        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
-                0x00000cd8                yield
+                0x0000126c       0xf4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x0000126c                __vector_5
+                0x0000126c                __vector_4
+                0x0000126c                __vector_3
+ .text._ZN14SoftwareSerial5setTXEh
+                0x00001360       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x00001360                _ZN14SoftwareSerial5setTXEh
+ .text._ZN14SoftwareSerial5setRXEh
+                0x000013b2       0x52 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000013b2                _ZN14SoftwareSerial5setRXEh
+ .text._ZN14SoftwareSerialC2Ehhb
+                0x00001404       0x56 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x00001404                _ZN14SoftwareSerialC1Ehhb
+                0x00001404                _ZN14SoftwareSerialC2Ehhb
+ .text._ZN14SoftwareSerial5beginEl
+                0x0000145a      0x11c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x0000145a                _ZN14SoftwareSerial5beginEl
+ .text.__empty  0x00001576        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00001576                yield
  .text.libgcc.div
-                0x00000cda       0x44 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000cda                __udivmodsi4
- .text.libgcc   0x00000d1e        0xc f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x00000d1e                __tablejump2__
+                0x00001578       0x28 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00001578                _div
+                0x00001578                __divmodhi4
+ .text.libgcc.div
+                0x000015a0       0x44 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x000015a0                __udivmodsi4
+ .text.libgcc.div
+                0x000015e4       0x2e f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+                0x000015e4                __divmodsi4
+ .text.libgcc.div
+                0x00001612       0x10 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+                0x00001612                __negsi2
+ .text.libgcc   0x00001622        0xc f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00001622                __tablejump2__
  .text.libgcc.mul
-                0x00000d2a       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                0x00000d2a                __muluhisi3
+                0x0000162e       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x0000162e                __muluhisi3
+ .text.libgcc.div
+                0x00001644       0x28 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001644                __udivmodhi4
  .text.libgcc.mul
-                0x00000d40       0x1e f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x00000d40                __umulhisi3
-                0x00000d5e                . = ALIGN (0x2)
+                0x0000166c       0x1e f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x0000166c                __umulhisi3
+ .text.avr-libc
+                0x0000168a      0x242 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000168a                malloc
+                0x000017ba                free
+                0x000018cc                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000d5e        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000d5e                _exit
-                0x00000d5e                exit
+ .fini9         0x000018cc        0x0 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000018cc                _exit
+                0x000018cc                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00000d5e       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00000d5e                __do_global_dtors
+ .fini6         0x000018cc       0x16 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x000018cc                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1159,69 +1172,84 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000d74        0x4 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000018e2        0x4 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000d78                _etext = .
+                0x000018e6                _etext = .
 
-.data           0x00800100       0x54 load address 0x00000d78
+.data           0x00800100       0xd6 load address 0x000018e6
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
+ .data          0x00800100        0x6 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800100                __malloc_heap_end
+                0x00800102                __malloc_heap_start
+                0x00800104                __malloc_margin
  *(.data*)
  *(.rodata)
+ .rodata        0x00800106        0xa src/Mp3Player.o
  *(.rodata*)
  .rodata.str1.1
-                0x00800100       0x35 sketch.o
- .rodata._ZTV14HardwareSerial
-                0x00800135       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00800135                _ZTV14HardwareSerial
+                0x00800110       0x35 sketch.o
  .rodata.str1.1
-                0x00800145        0xf C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00800145       0x62 src/Mp3Player.o
+ .rodata._ZTV14HardwareSerial
+                0x008001a7       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x008001a7                _ZTV14HardwareSerial
+ .rodata.str1.1
+                0x008001b7        0xf C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .rodata._ZTV14SoftwareSerial
+                0x008001c6       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x008001c6                _ZTV14SoftwareSerial
  *(.gnu.linkonce.d*)
-                0x00800154                . = ALIGN (0x2)
-                0x00800154                _edata = .
-                0x00800154                PROVIDE (__data_end, .)
+                0x008001d6                . = ALIGN (0x2)
+                0x008001d6                _edata = .
+                0x008001d6                PROVIDE (__data_end, .)
 
-.bss            0x00800154       0xf0
-                0x00800154                PROVIDE (__bss_start, .)
+.bss            0x008001d6       0xf6
+                0x008001d6                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.sensor    0x00800154        0x4 sketch.o
-                0x00800154                sensor
- .bss.led       0x00800158        0x2 sketch.o
-                0x00800158                led
- .bss.Serial    0x0080015a       0x9d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0080015a                Serial
+ .bss.mp3       0x008001d6        0x2 sketch.o
+                0x008001d6                mp3
+ .bss.sensor    0x008001d8        0x4 sketch.o
+                0x008001d8                sensor
+ .bss.led       0x008001dc        0x2 sketch.o
+                0x008001dc                led
+ .bss.Serial    0x008001de       0x9d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x008001de                Serial
  .bss.timer0_fract
-                0x008001f7        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0080027b        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x008001f8        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008001f8                timer0_millis
+                0x0080027c        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0080027c                timer0_millis
  .bss.timer0_overflow_count
-                0x008001fc        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008001fc                timer0_overflow_count
+                0x00800280        0x4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800280                timer0_overflow_count
  .bss._ZN14SoftwareSerial20_receive_buffer_headE
-                0x00800200        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
-                0x00800200                _ZN14SoftwareSerial20_receive_buffer_headE
+                0x00800284        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x00800284                _ZN14SoftwareSerial20_receive_buffer_headE
  .bss._ZN14SoftwareSerial20_receive_buffer_tailE
-                0x00800201        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
-                0x00800201                _ZN14SoftwareSerial20_receive_buffer_tailE
+                0x00800285        0x1 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x00800285                _ZN14SoftwareSerial20_receive_buffer_tailE
  .bss._ZN14SoftwareSerial15_receive_bufferE
-                0x00800202       0x40 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
-                0x00800202                _ZN14SoftwareSerial15_receive_bufferE
+                0x00800286       0x40 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x00800286                _ZN14SoftwareSerial15_receive_bufferE
  .bss._ZN14SoftwareSerial13active_objectE
-                0x00800242        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
-                0x00800242                _ZN14SoftwareSerial13active_objectE
+                0x008002c6        0x2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x008002c6                _ZN14SoftwareSerial13active_objectE
  *(COMMON)
-                0x00800244                PROVIDE (__bss_end, .)
-                0x00000d78                __data_load_start = LOADADDR (.data)
-                0x00000dcc                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008002c8        0x4 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008002c8                __brkval
+                0x008002ca                __flp
+                0x008002cc                PROVIDE (__bss_end, .)
+                0x000018e6                __data_load_start = LOADADDR (.data)
+                0x000019bc                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800244        0x0
+.noinit         0x008002cc        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800244                _end = .
-                0x00800244                PROVIDE (__heap_start, .)
+                0x008002cc                _end = .
+                0x008002cc                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1266,14 +1294,18 @@ END GROUP
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 src/LedBlinker.o
  .comment       0x00000030       0x31 src/LengthSensor.o
+ .comment       0x00000030       0x31 src/Mp3Player.o
+ .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
  .comment       0x00000030       0x31 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .comment       0x00000030       0x31 f:/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -1295,7 +1327,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x398
+.debug_aranges  0x00000000      0x5d8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x38 sketch.o
@@ -1304,121 +1336,148 @@ END GROUP
  .debug_aranges
                 0x00000070       0x30 src/LengthSensor.o
  .debug_aranges
-                0x000000a0       0x68 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000000a0       0x40 src/Mp3Player.o
  .debug_aranges
-                0x00000108       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000000e0      0x1d8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
  .debug_aranges
-                0x00000140       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000002b8       0x68 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x00000170       0xf0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000320       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000260       0x48 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000358       0x30 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x000002a8       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000388       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .debug_aranges
-                0x000002e0       0x98 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+                0x000003b0       0xf0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x00000378       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x000004a0       0x48 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_aranges
+                0x000004e8       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_aranges
+                0x00000520       0x98 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_aranges
+                0x000005b8       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xa925
+.debug_info     0x00000000    0x12504
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x61b sketch.o
- .debug_info    0x00000c0f      0x34d src/LedBlinker.o
- .debug_info    0x00000f5c      0x47a src/LengthSensor.o
- .debug_info    0x000013d6     0x1ea5 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x0000327b     0x1a99 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00004d14      0x237 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00004f4b     0x285e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x000077a9      0x2cb C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x00007a74      0x5fe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00008072     0x2875 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .debug_info    0x0000a8e7       0x3e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x000005f4     0x24f9 sketch.o
+ .debug_info    0x00002aed      0x34d src/LedBlinker.o
+ .debug_info    0x00002e3a      0x47a src/LengthSensor.o
+ .debug_info    0x000032b4     0x242e src/Mp3Player.o
+ .debug_info    0x000056e2     0x37b7 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_info    0x00008e99     0x1ea5 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x0000ad3e     0x1a99 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x0000c7d7      0x237 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x0000ca0e      0x11c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_info    0x0000cb2a     0x285e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x0000f388      0x2cb C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x0000f653      0x5fe C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000fc51     0x2875 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_info    0x000124c6       0x3e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000     0x2206
+.debug_abbrev   0x00000000     0x2ce8
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x299 sketch.o
- .debug_abbrev  0x0000083b      0x185 src/LedBlinker.o
- .debug_abbrev  0x000009c0      0x204 src/LengthSensor.o
- .debug_abbrev  0x00000bc4      0x432 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00000ff6      0x3a2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x00001398      0x12d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x000014c5      0x469 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x0000192e      0x146 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00001a74      0x15b C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00001bcf      0x60d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .debug_abbrev  0x000021dc       0x2a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x000005a2      0x449 sketch.o
+ .debug_abbrev  0x000009eb      0x185 src/LedBlinker.o
+ .debug_abbrev  0x00000b70      0x204 src/LengthSensor.o
+ .debug_abbrev  0x00000d74      0x3c8 src/Mp3Player.o
+ .debug_abbrev  0x0000113c      0x49c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_abbrev  0x000015d8      0x432 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00001a0a      0x3a2 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00001dac      0x12d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00001ed9       0xce C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_abbrev  0x00001fa7      0x469 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00002410      0x146 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00002556      0x15b C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x000026b1      0x60d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_abbrev  0x00002cbe       0x2a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000     0x214e
+.debug_line     0x00000000     0x3106
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000133      0x244 sketch.o
- .debug_line    0x00000377      0x175 src/LedBlinker.o
- .debug_line    0x000004ec      0x254 src/LengthSensor.o
- .debug_line    0x00000740      0x406 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00000b46      0x237 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00000d7d      0x159 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00000ed6      0x606 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x000014dc      0x28d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001769      0x246 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x000019af      0x75e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .debug_line    0x0000210d       0x41 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000133      0x326 sketch.o
+ .debug_line    0x00000459      0x175 src/LedBlinker.o
+ .debug_line    0x000005ce      0x254 src/LengthSensor.o
+ .debug_line    0x00000822      0x336 src/Mp3Player.o
+ .debug_line    0x00000b58      0xa99 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_line    0x000015f1      0x406 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x000019f7      0x237 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00001c2e      0x159 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00001d87      0x107 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_line    0x00001e8e      0x606 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00002494      0x28d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00002721      0x246 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00002967      0x75e C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_line    0x000030c5       0x41 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000      0x9f8
+.debug_frame    0x00000000      0xf2c
  *(.debug_frame)
- .debug_frame   0x00000000       0x60 sketch.o
- .debug_frame   0x00000060       0x54 src/LedBlinker.o
- .debug_frame   0x000000b4       0x7c src/LengthSensor.o
- .debug_frame   0x00000130      0x110 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x00000240       0xc0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x00000300       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x00000354      0x38c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x000006e0       0xc4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x000007a4       0x7c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x00000820      0x1b4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .debug_frame   0x000009d4       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000000       0x6c sketch.o
+ .debug_frame   0x0000006c       0x54 src/LedBlinker.o
+ .debug_frame   0x000000c0       0x7c src/LengthSensor.o
+ .debug_frame   0x0000013c       0x90 src/Mp3Player.o
+ .debug_frame   0x000001cc      0x444 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_frame   0x00000610      0x110 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000720       0xc0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x000007e0       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00000834       0x54 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_frame   0x00000888      0x38c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x00000c14       0xc4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000cd8       0x7c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000d54      0x1b4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_frame   0x00000f08       0x24 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000     0x269e
+.debug_str      0x00000000     0x33f6
  *(.debug_str)
  .debug_str     0x00000000      0x208 F:/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x43a sketch.o
-                                0x49d (size before relaxing)
- .debug_str     0x00000642       0x5d src/LedBlinker.o
+ .debug_str     0x00000208     0x1f5e sketch.o
+                               0x203a (size before relaxing)
+ .debug_str     0x00002166       0x5d src/LedBlinker.o
                                 0x337 (size before relaxing)
- .debug_str     0x0000069f       0x6e src/LengthSensor.o
+ .debug_str     0x000021c3       0x6e src/LengthSensor.o
                                 0x39c (size before relaxing)
- .debug_str     0x0000070d     0x131c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00002231       0xa7 src/Mp3Player.o
+                               0x1f0a (size before relaxing)
+ .debug_str     0x000022d8       0xfd C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+                               0x1e00 (size before relaxing)
+ .debug_str     0x000023d5      0x398 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x15fb (size before relaxing)
- .debug_str     0x00001a29       0x55 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x0000276d       0x55 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x13d4 (size before relaxing)
- .debug_str     0x00001a7e       0x37 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x000027c2       0x37 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2b0 (size before relaxing)
- .debug_str     0x00001ab5      0x3a9 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x000027f9       0x55 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+                                0x1c6 (size before relaxing)
+ .debug_str     0x0000284e      0x3a4 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                0x11f5 (size before relaxing)
- .debug_str     0x00001e5e      0x143 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x00002bf2      0x13d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x246 (size before relaxing)
- .debug_str     0x00001fa1       0xbb C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00002d2f       0xbb C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2ab (size before relaxing)
- .debug_str     0x0000205c      0x5dc C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_str     0x00002dea      0x5a6 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
                                0x18fb (size before relaxing)
- .debug_str     0x00002638       0x66 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00003390       0x66 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                                 0x134 (size before relaxing)
 
-.debug_loc      0x00000000     0x3a85
+.debug_loc      0x00000000     0x52ee
  *(.debug_loc)
- .debug_loc     0x00000000       0x8a sketch.o
- .debug_loc     0x0000008a       0xc8 src/LedBlinker.o
- .debug_loc     0x00000152      0x1cd src/LengthSensor.o
- .debug_loc     0x0000031f      0x482 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x000007a1      0x18a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x0000092b     0x1c61 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x0000258c      0x28d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00002819      0x5fc C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x00002e15      0xc70 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_loc     0x00000000       0xb9 sketch.o
+ .debug_loc     0x000000b9       0xc8 src/LedBlinker.o
+ .debug_loc     0x00000181      0x1cd src/LengthSensor.o
+ .debug_loc     0x0000034e      0x21b src/Mp3Player.o
+ .debug_loc     0x00000569     0x15d3 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_loc     0x00001b3c      0x482 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00001fbe      0x18a C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00002148       0x4c C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_loc     0x00002194     0x1c61 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00003df5      0x28d C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x00004082      0x5fc C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x0000467e      0xc70 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1438,19 +1497,22 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x360
+.debug_ranges   0x00000000      0x570
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x28 sketch.o
  .debug_ranges  0x00000028       0x28 src/LedBlinker.o
  .debug_ranges  0x00000050       0x20 src/LengthSensor.o
- .debug_ranges  0x00000070       0x58 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x000000c8       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x000000f0       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000110      0x110 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000220       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x00000258       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x00000280       0xd0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
- .debug_ranges  0x00000350       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000070       0x30 src/Mp3Player.o
+ .debug_ranges  0x000000a0      0x1c8 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(DFRobotDFPlayerMini.o)
+ .debug_ranges  0x00000268       0x58 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x000002c0       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000002e8       0x20 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000308       0x18 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(new.o)
+ .debug_ranges  0x00000320      0x110 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000430       0x38 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000468       0x28 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000490       0xd0 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(SoftwareSerial.o)
+ .debug_ranges  0x00000560       0x10 C:\Users\Bunchu\Documents\Atmel Studio\7.0\AlienCake\AlienCake\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)

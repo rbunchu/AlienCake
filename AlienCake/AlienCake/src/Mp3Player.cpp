@@ -22,10 +22,16 @@ Mp3Player::Mp3Player(int rxPin, int txPin)
 			Serial.println("1. Please recheck the connection!");
 			Serial.println("2. Please insert SD card!");
 		#endif
-		//Handgs here if something goes wrong
+		//Hangs here if something goes wrong
 		while(true);
 	}
-	
+
+	#ifdef DEBUG
+		Serial.println("MP3 player is online");
+	#endif
+	m_mp3Player.EQ(DFPLAYER_EQ_NORMAL);
+	m_mp3Player.outputDevice(DFPLAYER_DEVICE_SD);
+
 	VolumeMax();
 }
 
@@ -42,10 +48,11 @@ void Mp3Player::VolumeMax()
 
 void Mp3Player::Play()
 {
-	m_mp3Player.play(1);
+	m_mp3Player.playMp3Folder(2);
 }
 
 void Mp3Player::Stop()
 {
 	m_mp3Player.stop();	
 }
+

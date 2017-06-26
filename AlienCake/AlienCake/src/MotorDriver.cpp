@@ -8,30 +8,71 @@
 #include <MotorDriver.h>
 #include <Arduino.h>
 
-MotorDriver::MotorDriver(int pwmEnablePin, int inputPin)
+MotorDriverCanal::MotorDriverCanal(int enable, int input1, int input2)
 {
-	m_pwmEnablePin = pwmEnablePin;
-	m_inputPin = inputPin;
+	m_enable = enable;
+	m_input1 = input1;
+	m_input2 = input2;
+}
+
+int MotorDriverCanal::GetEnable()
+{
+	return m_enable;
+}
+
+int MotorDriverCanal::GetInput1()
+{
+	return m_input1;
+}
+
+int MotorDriverCanal::GetInput2()
+{
+	return m_input2;
+}
+
+void MotorDriverCanal::SetInput(int input1, int input2)
+{
+	m_input1 = input1;
+	m_input2 = input2;
+}
+
+void MotorDriverCanal::SetEnable(int enable)
+{
+	m_enable = enable;
+}
+
+
+MotorDriver::MotorDriver(MotorDriverCanal &canal1)
+: m_canal1(canal1)
+{
 	m_motorDirection = MotorDirection::CLOCKWISE;
 	m_motorSpeed = 0;	
-	
-	pinMode(m_pwmEnablePin, OUTPUT);
-	digitalWrite(m_pwmEnablePin, LOW);
-	pinMode(m_inputPin, OUTPUT);
-	digitalWrite(m_inputPin, LOW);
+	//First canal
+	pinMode(m_canal1.GetEnable(), OUTPUT);
+	pinMode(m_canal1.GetInput1(), OUTPUT);
+	pinMode(m_canal1.GetInput2(), OUTPUT);
+	digitalWrite(m_canal1.GetEnable(), LOW);
+	digitalWrite(m_canal1.GetInput1(), LOW);
+	digitalWrite(m_canal1.GetInput2(), HIGH);
 }
 
-void MotorDriver::Start(int speed)
+void MotorDriver::Start(DriverCanalType type, int speed)
 {	
-	analogWrite(m_pwmEnablePin, speed);
+	if(type == DriverCanalType::CANAL_1)
+	{
+		analogWrite(m_canal1.GetEnable(), speed);
+	}
 }
 
-void MotorDriver::Stop()
-{	
-	analogWrite(m_pwmEnablePin, 0);
+void MotorDriver::Stop(DriverCanalType type)
+{
+	if(type == DriverCanalType::CANAL_1)
+	{
+		analogWrite(m_canal1.GetEnable(), 0);
+	}
 }
 
-void MotorDriver::ChangeDirection(MotorDirection direction)
+void MotorDriver::ChangeDirection(DriverCanalType type, MotorDirection direction)
 {
 	if(direction == m_motorDirection)
 	{		
@@ -39,17 +80,23 @@ void MotorDriver::ChangeDirection(MotorDirection direction)
 		return;	
 	}
 	
-	if(direction == COUNTER_CLOCKWISE)
-	{		
-		digitalWrite(m_inputPin, HIGH);	
+	m_motorDirection = direction;
+
+	MotorDriverCanal *canal = &m_canal1;
+
+	if(m_motorDirection == MotorDirection::COUNTER_CLOCKWISE)
+	{
+		digitalWrite(canal->GetInput1(), HIGH);
+		digitalWrite(canal->GetInput2(), LOW);
 	}
 	else
-	{			
-		digitalWrite(m_inputPin, LOW);
+	{
+		digitalWrite(canal->GetInput1(), LOW);
+		digitalWrite(canal->GetInput2(), HIGH);
 	}
 }
 
-void MotorDriver::ChangeSpeed(unsigned int speed)
+void MotorDriver::ChangeSpeed(DriverCanalType type, unsigned int speed)
 {
 	int actSpeed = speed;
 	if(speed > 255)
@@ -57,5 +104,5 @@ void MotorDriver::ChangeSpeed(unsigned int speed)
 		actSpeed = 255;
 	}
 
-	analogWrite(m_pwmEnablePin, actSpeed);
+	analogWrite(m_canal1.GetEnable(), actSpeed);
 }

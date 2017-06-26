@@ -35,6 +35,10 @@ sketch.d sketch.o: .././sketch.cpp \
  ..\\..\ArduinoCore\include\core/Arduino.h \
  ..\\..\ArduinoCore\include\core/../variants/standard/pins_arduino.h \
  ..\\include/LedBlinker.h ..\\include/LengthSensor.h \
+ ..\\include/Mp3Player.h \
+ ../../ArduinoCore/include/libraries/DFPlayerMiniMp3/include/DFRobotDFPlayerMini.h \
+ ../../ArduinoCore/include/libraries/SoftwareSerial/src/SoftwareSerial.h \
+ ..\\..\ArduinoCore\include\core/Stream.h \
  ..\\..\ArduinoCore\include\core/HardwareSerial.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
@@ -110,5 +114,13 @@ f:\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_bas
 ..\\include/LedBlinker.h:
 
 ..\\include/LengthSensor.h:
+
+..\\include/Mp3Player.h:
+
+../../ArduinoCore/include/libraries/DFPlayerMiniMp3/include/DFRobotDFPlayerMini.h:
+
+../../ArduinoCore/include/libraries/SoftwareSerial/src/SoftwareSerial.h:
+
+..\\..\ArduinoCore\include\core/Stream.h:
 
 ..\\..\ArduinoCore\include\core/HardwareSerial.h:

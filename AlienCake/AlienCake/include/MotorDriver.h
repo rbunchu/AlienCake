@@ -3,6 +3,7 @@
  *
  * Created: 6/14/2017 12:04:56 PM
  *  Author: mkamuda
+ * Using L293D driver
  */ 
 
 
@@ -15,21 +16,42 @@ enum MotorDirection
 	CLOCKWISE = 1
 };
 
+enum DriverCanalType
+{
+	CANAL_1 = 0,
+	CANAL_2 = 1
+};
+
+class MotorDriverCanal
+{
+	private:
+		int m_input1;
+		int m_input2;
+		int m_enable;
+	public:
+		MotorDriverCanal(int, int, int);
+		int GetInput1();
+		int GetInput2();
+		int GetEnable();
+		void SetInput(int, int);
+		void SetEnable(int);
+};
+
+
 class MotorDriver
 {
 	public:
-		MotorDriver(int, int);
+		MotorDriver(MotorDriverCanal &);
 		//Starts one of the motor with initial speed
-		void Start(int);
+		void Start(DriverCanalType, int);
 		//Changes speed of motor. Max value is 255
-		void ChangeSpeed(unsigned int);
+		void ChangeSpeed(DriverCanalType type, unsigned int);
 		//Changes direction of motor spinning
-		void ChangeDirection(MotorDirection);
+		void ChangeDirection(DriverCanalType, MotorDirection);
 		//Stops motor
-		void Stop();
+		void Stop(DriverCanalType);
 	private:
-		int m_pwmEnablePin;
-		int m_inputPin;
+		MotorDriverCanal &m_canal1;
 		MotorDirection m_motorDirection;
 		unsigned int m_motorSpeed;
 };

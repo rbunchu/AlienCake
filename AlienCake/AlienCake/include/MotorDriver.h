@@ -2,7 +2,7 @@
  * MotorDriver.h
  *
  * Created: 6/14/2017 12:04:56 PM
- *  Author: mkamuda
+ * Author: mkamuda
  * Using L293D driver
  */ 
 
@@ -16,20 +16,22 @@ enum MotorDirection
 	CLOCKWISE = 1
 };
 
+//Type of motor canal. L293D has two canals
 enum DriverCanalType
 {
 	CANAL_1 = 0,
 	CANAL_2 = 1
 };
 
-class MotorDriverCanal
+//Motor driver pin connection for one canal
+class MotorDriverCConfig
 {
 	private:
 		int m_input1;
 		int m_input2;
 		int m_enable;
 	public:
-		MotorDriverCanal(int, int, int);
+		MotorDriverCConfig(int, int, int);
 		int GetInput1();
 		int GetInput2();
 		int GetEnable();
@@ -41,7 +43,7 @@ class MotorDriverCanal
 class MotorDriver
 {
 	public:
-		MotorDriver(MotorDriverCanal &);
+		MotorDriver(MotorDriverCConfig *, MotorDriverCConfig *);
 		//Starts one of the motor with initial speed
 		void Start(DriverCanalType, int);
 		//Changes speed of motor. Max value is 255
@@ -51,9 +53,11 @@ class MotorDriver
 		//Stops motor
 		void Stop(DriverCanalType);
 	private:
-		MotorDriverCanal &m_canal1;
+		MotorDriverCConfig *m_canal1;
+		MotorDriverCConfig *m_canal2;
 		MotorDirection m_motorDirection;
 		unsigned int m_motorSpeed;
+		void Initialize(MotorDriverCConfig *);
 };
 
 

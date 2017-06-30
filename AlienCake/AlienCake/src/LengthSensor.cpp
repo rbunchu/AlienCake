@@ -33,6 +33,8 @@ int LengthSensor::Measure()
 	  }
 
 	  time = micros() - time;
-	  Serial.println(time);	  
+	  #ifdef DEBUG
+		Serial.println(time);
+	  #endif			  
 	  return (time * 34) / 2000;
 }

@@ -9,10 +9,12 @@
 #include <Mp3Player.h>
 
 
-Mp3Player::Mp3Player(int rxPin, int txPin)
+Mp3Player::Mp3Player(int rxPin, int txPin, int busyPin)
 {
 	m_rxPin = rxPin;
 	m_txPin = txPin;
+	m_busyPin = busyPin;
+	pinMode(m_busyPin, INPUT);
 	m_softwareSerial = new SoftwareSerial(m_rxPin, m_txPin);
 	m_softwareSerial->begin(9600);
 	if(!m_mp3Player.begin(*m_softwareSerial))
@@ -54,5 +56,11 @@ void Mp3Player::Play()
 void Mp3Player::Stop()
 {
 	m_mp3Player.stop();	
+}
+
+boolean Mp3Player::isBusy()
+{
+	int value = digitalRead(m_busyPin);
+	return value == LOW;
 }
 

@@ -10,5 +10,9 @@ src\LengthSensor.cpp
 
 src\MotorDriver.cpp
 
+src\MotorizedPole.cpp
+
 src\Mp3Player.cpp
+
+src\ReedSwitch.cpp
 

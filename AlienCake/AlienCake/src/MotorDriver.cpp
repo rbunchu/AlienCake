@@ -132,7 +132,7 @@ void MotorDriver::Initialize(MotorDriverCConfig *canal)
 	pinMode(canal->GetEnable(), OUTPUT);
 	pinMode(canal->GetInput1(), OUTPUT);
 	pinMode(canal->GetInput2(), OUTPUT);
-	digitalWrite(canal->GetEnable(), LOW);
+	analogWrite(canal->GetEnable(), 0);
 	digitalWrite(canal->GetInput1(), LOW);
 	digitalWrite(canal->GetInput2(), HIGH);
 }

@@ -2,6 +2,10 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+include\libraries\AccelStepper\src\AccelStepper.cpp
+
+include\libraries\AccelStepper\src\MultiStepper.cpp
+
 include\libraries\DFPlayerMiniMp3\src\DFRobotDFPlayerMini.cpp
 
 src\core\abi.cpp

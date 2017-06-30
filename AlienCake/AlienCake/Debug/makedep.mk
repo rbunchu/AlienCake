@@ -14,3 +14,5 @@ src\MotorizedPole.cpp
 
 src\Mp3Player.cpp
 
+src\ReedSwitch.cpp
+

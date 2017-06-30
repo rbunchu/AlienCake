@@ -15,13 +15,15 @@
 class Mp3Player
 {
 	public:
-		Mp3Player(int, int);
+		Mp3Player(int, int, int);
 		~Mp3Player();
 		void Play();
 		void Stop();
+		boolean isBusy();
 	private:
 		int m_rxPin;
 		int m_txPin;
+		int m_busyPin;
 		SoftwareSerial *m_softwareSerial;
 		DFRobotDFPlayerMini m_mp3Player;
 		void VolumeMax();
